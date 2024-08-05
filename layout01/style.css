@@ -1,0 +1,52 @@
+header {
+  height: 100px;
+  background-color: #01579B;
+}
+
+nav {
+  background-color: white;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+
+.menu-space {
+  flex: 1 30px;
+  display: flex;
+}
+
+.empty-space {
+  flex: 2 10px;
+  border-left: 1px solid #ddd;
+}
+
+li {
+  list-style: none;
+  background-color: white;
+  flex: 1 auto;
+}
+
+li:nth-child(2) {
+  background-color: skyblue;
+}
+
+main{
+  height: 500px;
+  display: flex;
+}
+
+aside {
+  background-color: #f3f3f3;
+  flex: 1 100px;
+}
+
+.content {
+  background-color: white;
+  flex: 3 200px;
+}
+
+footer {
+  height: 70px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
