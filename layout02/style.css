@@ -1,7 +1,20 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 header {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 header div {
@@ -9,10 +22,15 @@ header div {
   display: flex;
   align-items: center;
 }
+
 header a {
   text-decoration: none;
   color: black;
   padding: 10px;
+}
+
+header .left-header {
+  padding-left: -10px;
 }
 
 .login-button {
@@ -41,20 +59,20 @@ header a img {
   display: flex;
   justify-content: center;
   align-items: end;
+  flex-shrink: 1;
+  min-height: 150px;
 }
 
 .image-area div {
   margin-bottom: 20px;
 }
 
-
-
-
 .search-area {
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .search-bar {
@@ -126,11 +144,35 @@ input:focus {
 }
 
 .empty-area {
-  height: 500px;
-  background-color: skyblue;
+  flex: 1 1 auto;
 }
 
 footer {
-  height: 100px;
-  background-color: lightgrey;
+  background-color: rgb(242, 242, 242);
+  font-size: 15px;
+}
+
+footer a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.top-footer {
+  padding: 15px 30px;
+  border-bottom: 2px solid rgb(230, 231, 233);
+}
+
+.bottom-footer {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bottom-footer div {
+  min-width: 250px;
+  align-items: center;
+  text-align: center;
+  flex: 60px;
 }
