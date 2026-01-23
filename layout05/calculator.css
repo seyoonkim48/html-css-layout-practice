@@ -6,3 +6,45 @@
 div, nav, li {
   border: 1px dotted #ccc;
 }
+#container > div, nav{
+  border-color: red;
+  margin: 3px 0px;
+}
+
+#container {
+  width: 320px;
+  padding: 3px;
+  height: 500px;
+}
+
+#header {
+  display: flex;
+  justify-content: left;
+  height: 25px;
+}
+
+.history {
+  margin-left: auto;
+}
+
+#view {
+  text-align: right;
+  height: 100px;
+}
+
+#selection > ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  height: 30px;
+  padding-left: 0px;
+}
+
+#btn-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  height: 320px;
+}
