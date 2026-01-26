@@ -15,6 +15,7 @@ div, nav, li {
   width: 320px;
   padding: 3px;
   height: 500px;
+  background-color: #f4f8ff;
 }
 
 #header {
@@ -32,6 +33,17 @@ div, nav, li {
   height: 100px;
 }
 
+.sub-result {
+  height: 35%;
+  padding: 4px 7px;
+}
+
+.result {
+  height: 65%;
+  padding: 0px 7px;
+  font-size: 35px;
+}
+
 #selection > ul {
   text-align: center;
   display: flex;
@@ -39,12 +51,27 @@ div, nav, li {
   list-style: none;
   height: 30px;
   padding-left: 0px;
+  font-family: "LINE Seed JP", sans-serif;
+  line-height: 30px;
 }
 
 #btn-container {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  gap: 3px;
   height: 320px;
+}
+
+.btn {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px 0px #e3e3e3;
+  background-color: white;
+  line-height: 48px;
+  font-size: 17px;
+}
+
+.operator {
+  background-color: #f5f8fc;
 }
