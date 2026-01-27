@@ -75,3 +75,17 @@ div, nav, li {
 .operator {
   background-color: #f5f8fc;
 }
+
+.btn:hover {
+  background-color: rgba(230, 230, 230, 0.1);
+}
+
+.operator:hover {
+  background-color: rgba(230, 230, 230, 0.3);
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.press-btn {}
